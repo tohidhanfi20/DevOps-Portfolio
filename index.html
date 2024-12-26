@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/00b2e9f8b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="logo.png" class="logo"> -->
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mytools">My Tools</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-regular fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p></p>
+          <!-- <h1>Hi, I'm <span>SAI</span> <br>from India</h1> -->
+        </div>
+      </div>
+    </div>
+
+    <!--ABOUT-->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="user2.jpg" />
+          </div>
+          <div class="about-col-1">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+            I'm <span class="highlight">Tohid Hanfi</span>, a dedicated <span class="highlight">DevOps/Cloud Engineer</span> with a knowledge to
+            achieving tangible results in automating infrastructure,
+            implementing CI/CD pipelines and managing cloud-based services.
+            Proactive and Excited to partner with like-minded individuals to
+            achieve goals.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+              <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>AWS</span></li>
+                <li><span>Terraform</span></li>
+                <li><span>Kubernetes</span></li>
+                <li><span>Shell Scripting</span></li>
+                <li><span>Docker</span></li>
+                <li><span>Ansible</span></li>
+                <li><span>Prometheus & Grafana</span></li>
+                <li><span>Jenkins</span></li>
+                <li><span>Git</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+                <h3>DevOps Intern - Xpayback.com (Remote, Aug 2024 - Oct 2024)</h3>
+                <ul>
+                  <li>
+                    Proposed and implemented cost optimization techniques, boosting operational efficiency by 20%.
+                  </li>
+                  <li>
+                    Enhanced infrastructure scalability and reliability, resulting in a 30% improvement in system performance.
+                  </li>
+                  <li>
+                    Collaborated with cross-functional teams to elevate DevOps practices, achieving a 20% performance increase.
+                  </li>
+                </ul>
+              
+                <h3>DevOps Engineer Intern - Rablo.in (Remote, June 2024 - Present)</h3>
+                <ul>
+                  <li>
+                    Automated deployment processes, increasing overall efficiency by 50%.
+                  </li>
+                  <li>
+                    Designed and maintained a CI/CD pipeline using Jenkins for streamlined builds and deployments.
+                  </li>
+                  <li>
+                    Managed containerized applications and large-scale deployments, leveraging scripting tools like Bash and Python to automate workflows, improving performance by 40%.
+                  </li>
+                </ul>
+              
+                <h3>DevOps Engineer Intern - Abhyaz.com (Remote, Nov 2023 - Feb 2024)</h3>
+                <ul>
+                  <li>
+                    Troubleshot and resolved technical issues, improving efficiency by 50%.
+                  </li>
+                  <li>
+                    Integrated Zoho tools into DevOps deployment processes for enhanced productivity.
+                  </li>
+                  <li>
+                    Gained proficiency in AWS services such as EC2, EKS, S3, VPC, RDS, IAM, Auto Scaling, and Route 53, contributing to a 20% performance increase.
+                  </li>
+                </ul>
+              </div>
+              
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>B.E from Nagpur University</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Certifications">
+                <ul>
+                  <li><span>AWS Certified: Cloud Practitioner</span></li>
+                  <li><span>Microsoft Certified: Azure Administrator Associate</span></li>
+                  <li><span>Microsoft Certified: Azure fundamentals</span></li>
+                  <li><span>Cisco Certified: Networking fundamentals</span></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--    --services--    -->
+
+    <div id="mytools">
+      <div class="container">
+        <h1 class="sub-title">My Tools</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-cloud"></i>
+            <h2>AWS</h2>
+            <p>
+                Amazon Web Services, is a comprehensive and widely adopted cloud computing platform that offers on-demand access to scalable computing resources. It provides a broad range of services, including computing power, storage, databases, networking, and machine learning, enabling businesses to build and deploy applications with ease.
+            </p>
+            <!-- View link -->
+            <a href="https://aws.amazon.com/console/" target="_blank" class="btn btn1"
+              >OFFICIAL SITE
+            </a>
+          </div>
+          <div>
+            <i class="fas fa-cogs"></i>
+
+            <h2>Jenkins</h2>
+            <p>
+                Jenkins is an open-source automation server widely used for continuous integration and continuous delivery (CI/CD). It helps automate the building, testing, and deployment of software projects, making development workflows faster and more efficient.
+            </p>
+            <a
+              href="https://www.jenkins.io/"
+              target="_blank"
+              class="btn btn1"
+              >OFFICIAL SITE
+            </a>
+          </div>
+          <div>
+            <i class="fas fa-cube"></i>
+
+            <h2>Terraform</h2>
+            <p>
+                Terraform is an open-source infrastructure as code (IaC) tool that enables you to define, provision, and manage infrastructure across multiple cloud providers and on-premises environments. Using a declarative configuration language, it automates the creation and management of resources like servers, networks, and storage.
+            </p>
+            <a
+              href="https://www.terraform.io/"
+              target="_blank"
+              class="btn btn1"
+              >OFFICIAL SITE
+            </a>
+          </div>
+          <div>
+            <i class="fas fa-cloud"></i>
+            <h2>Docker & Kubernetes</h2>
+            <p>
+                Docker is a platform that enables developers to build, ship, and run applications in lightweight, portable containers, ensuring consistency across different environments. Kubernetes, on the other hand, is an open-source container orchestration system that automates the deployment, scaling, and management of containerized applications.
+            </p>
+            <!-- View link -->
+            <a href="https://kubernetes.io/" target="_blank" class="btn btn1"
+              >OFFICIAL SITE
+            </a>
+          </div>
+          <div>
+            <i class="fas fa-cogs"></i>
+
+            <h2>Linux</h2>
+            <p>
+                Linux is an open-source operating system known for its stability, security, and flexibility. It serves as the backbone for servers, desktops, and embedded systems, offering a robust environment for running applications and managing resources. With its modular architecture and extensive community support.
+            </p>
+            <a
+              href="https://www.linux.org/"
+              target="_blank"
+              class="btn btn1"
+              >OFFICIAL SITE
+            </a>
+          </div>
+          <div>
+            <i class="fas fa-cube"></i>
+
+            <h2>Ansible</h2>
+            <p>
+                Ansible is an open-source automation tool designed for configuration management, application deployment, and IT orchestration. It uses simple, human-readable YAML-based playbooks to define tasks and operates agentlessly by communicating with servers over SSH.
+            </p>
+            <a
+              href="https://www.ansible.com"
+              target="_blank"
+              class="btn btn1"
+              >OFFICIAL SITE
+            </a>
+          </div>
+          <div>
+            <i class="fas fa-cloud"></i>
+            <h2>Prometheus & Grafana</h2>
+            <p>
+                Prometheus is an open-source monitoring and alerting toolkit designed for collecting and querying metrics from various systems, while Grafana is a visualization platform that transforms those metrics into insightful, interactive dashboards. Together, they provide a powerful solution for monitoring.
+            </p>
+            <!-- View link -->
+            <a href="https://grafana.com/" target="_blank" class="btn btn1"
+              >OFFICIAL SITE
+            </a>
+          </div>
+          <div>
+            <i class="fas fa-cogs"></i>
+
+            <h2>GIT</h2>
+            <p>
+                Git is a widely used open-source version control system that allows developers to track changes in code, collaborate effectively, and manage projects efficiently. It provides a robust and distributed framework for managing code repositories, enabling multiple contributors to work on the same project simultaneously.
+            </p>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="btn btn1"
+              >OFFICIAL SITE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--       Protfolio            -->
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="database1.jpg" />
+            <div class="layer">
+              <h3>Farmly - The Grocery App</h3>
+              <p>
+                Farmly: Your Online Grocery Shopping Companion Overview: Farmly is a modern grocery app that brings the convenience of online shopping to your fingertips. Whether you're planning your weekly grocery run or need to quickly replenish your pantry, Farmly ensures a seamless and enjoyable shopping experience.
+              </p>
+              <a href="https://github.com/tohidhanfi20/Farmly---The_Grocery_App" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="web3.jpg" />
+            <div class="layer">
+              <h3>Realtime MONITORING using Prometheus and Grafana</h3>
+              <p>
+                Real-Time Monitoring using Prometheus and Grafana involves collecting metrics with Prometheus and visualizing them through Grafana's interactive dashboards. This combination enables real-time insights, system performance tracking, and proactive issue detection, ensuring reliable and efficient infrastructure management.
+              </p>
+              <a href="https://github.com/tohidhanfi20/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="design1.png" />
+            <div class="layer">
+              <h3>Task-Manager</h3>
+              <p>
+                Task-Manager is a task management application built using Java. It provides a robust set of features to help users create, manage, and track tasks. This project aims to demonstrate best practices in Java development, including project structure, coding standards, and documentation.
+              </p>
+              <a href="https://github.com/tohidhanfi20/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--          contact            -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>tohidhanfi20@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>9022296145</p>
+            <div class="social-icons">
+              <a href="https://github.com/tohidhanfi20" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <!-- <a href="" target="_blank"><i class="fa-brands fa-medium"></i></a> -->
+              <a href="https://www.linkedin.com/in/tohidhanfi/" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://hub.docker.com/u/tohidaws" target="_blank"
+                ><i class="fa-brands fa-docker"></i>
+              </a>
+            </div>
+            <a href="resume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" autocomplete="off" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                autocomplete="off"
+                required
+              />
+              <input
+                type="tel"
+                name="Contact"
+                placeholder="Your Contact"
+                autocomplete="off"
+                required
+              />
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Tohid Hanfi</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const sheet = SpreadsheetApp.openById("1c9fwazYihHtJ58bR1xLKHaVGL7OLEpNoAmpf5UGud88").getActiveSheet();
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
