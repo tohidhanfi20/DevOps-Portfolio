@@ -191,7 +191,7 @@ nav ul li a::after{
 .prometheus-logo{
     position: relative;
     left: 100px;
-    bottom: 80px;
+    bottom: 100px;
 }
 #monitoring>h2{
     position: relative;
@@ -207,7 +207,7 @@ nav ul li a::after{
 } */
 #docker>h2{
     position: relative;
-    bottom: 100px;
+    bottom: 50px;
 }
 #docker>p{
     position: relative;
