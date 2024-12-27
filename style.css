@@ -150,9 +150,68 @@ nav ul li a::after{
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
-.services-list div i{
+/* .services-list div i{
     font-size: 50px;
     margin-bottom: 20px;
+} */
+
+.services-list i {
+    font-size: 3em; /* Same size for all icons */
+    color: #ff0055; /* Ensures a uniform color */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Fixed width for all icons */
+    height: 50px; /* Fixed height for all icons */
+    background: none; /* Removes any background color */
+    border: none; /* Ensures no border around icons */
+    padding: 0;
+    box-sizing: border-box;
+  }
+.terraform-logo{
+    font-size: 3em; /* Same size for all icons */
+    color: #ff0055; /* Ensures a uniform color */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Fixed width for all icons */
+    height: 80px; /* Fixed height for all icons */
+    background: none; /* Removes any background color */
+    border: none; /* Ensures no border around icons */
+    padding: 0;
+    box-sizing: border-box;
+}
+.k8s-logo{
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+}
+.prometheus-logo{
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+}
+#monitoring>h2{
+    position: relative;
+    bottom: 90px;
+}
+#monitoring>p{
+    position: relative;
+    bottom: 85px;
+}
+/* #monitoring>a.btn btn1{
+    position: relative;
+    bottom: 80px;
+} */
+#docker>h2{
+    position: relative;
+    bottom: 100px;
+}
+#docker>p{
+    position: relative;
+    bottom: 85px;
 }
 .services-list div h2{
     font-size: 30px;
@@ -272,6 +331,8 @@ nav ul li a::after{
 }
 .btn{
     display: block;
+    position: relative;
+    top: 70px;
     margin: 50px auto;
     width: fit-content;
     border: 1px solid #ff004f;
